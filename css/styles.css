@@ -1,0 +1,239 @@
+html, body{
+    background-color: #fde2c7;
+}
+.navbar-collapse{
+    background-color: #f6a247;
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-collapse li{
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-brand img{
+    max-height: 40px;
+}
+
+header .row{
+    min-height: 70vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    color: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+header .formReservation{
+    background-color: rgba(0,0,0,0.5);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+header h2{
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 50px;
+}
+
+header .slogan{
+    display: flex;
+    min-height: 70vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#presentation .media span{
+    color: #f6a247;
+    font-size: 2rem;
+    width: 3em;
+    text-align: center;
+}
+
+#presentation .media{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+#presentation .media:hover{
+    background-color: rgba(128,128,128,.5);
+}
+
+.item{
+    text-align: left;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+}
+
+.salon{
+    background-color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: thick double #f6a247;
+    border-radius: 20px;
+}
+
+#offres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#offrec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.coworking{
+    background-color: #fff;
+    margin-left: 5px;
+    border: thick double #f6a247;
+    border-radius: 20px;
+}
+
+.categorie{
+    margin: auto;
+}
+
+.slider{
+    width: 640px;
+    height: 425px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+
+.slides{
+    width: calc(640px * 5);
+    animation: glisse 20s infinite;
+}
+
+.slide{
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-640px);
+    }
+    30% {
+        transform: translateX(-640px);
+    }
+    40% {
+        transform: translateX(-1280px);
+    }
+    50% {
+        transform: translateX(-1280px);
+    }
+    60% {
+        transform: translateX(-1920px);
+    }
+    70% {
+        transform: translateX(-1920px);
+    }
+    80% {
+        transform: translateX(-2560px);
+    }
+    90% {
+        transform: translateX(-2560px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fondLounge{
+    min-height: calc(100vh - 50px);
+    background-image: url(../img/lounge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.avisClient{
+    min-height: calc(100vh - 50px);
+    background-color: #f6a247;
+    color: #fff;
+}
+
+.avisClient span{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.avisClient h5{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.formContact{
+    background-color: rgba(255,255,255,.7);
+    padding: 2rem 1rem;
+}
+
+#contact{
+    background-image: url(../img/cosy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: calc(100vh - 50px);
+}
+
+#contact .row{
+    min-height: calc(100vh - 50px);
+}
+
+footer{
+    background-color: rgba(0,0,0,.8);
+    color: #999;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+footer a{
+    color: #999;
+    font-size: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    header .slogan{
+        display: none;
+    }
+    
+    #presentation .media span{
+    color: #f6a247;
+    font-size: 1rem;
+    width: 2em;
+    text-align: center;
+}
+    
+    .salon{
+        text-align: center;
+    }
+    
+    .coworking{
+        text-align: center;
+    }
+}
